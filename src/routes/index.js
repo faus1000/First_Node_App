@@ -8,5 +8,6 @@ router.get("/", (req, res) => {
 router.get("/contact", (req, res) => {
   res.render("contact.html", { title: "contact page" });
 });
- 
+
+
 module.exports = router;

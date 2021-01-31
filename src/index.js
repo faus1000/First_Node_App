@@ -1,4 +1,4 @@
-//TODO: Avance de tutorial: 44 minutos
+//TODO: Avance de tutorial: 46 minutos
 
 const express = require('express');
 const app = express();
@@ -18,6 +18,7 @@ app.engine('html',require('ejs').renderFile);
 
 
 //static files
+app.use(express.static(path.join(__dirname,'public')));
  
 //listening my server
 app.listen(app.get('port'), () => {
